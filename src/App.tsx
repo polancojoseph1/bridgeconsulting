@@ -1,12 +1,10 @@
 import {
   ArrowRight,
-  Bot,
   Box,
   Briefcase,
   Calendar,
   ChevronRight,
   GraduationCap,
-  Layers3,
   MessageSquare,
   Sparkles,
   Workflow,
@@ -33,7 +31,7 @@ const fadeUp = {
   show: (delay = 0) => ({
     opacity: 1,
     y: 0,
-    transition: { duration: 0.55, ease: [0.16, 1, 0.3, 1], delay },
+    transition: { duration: 0.55, delay },
   }),
 };
 
@@ -42,7 +40,7 @@ const fadeRight = {
   show: (delay = 0) => ({
     opacity: 1,
     x: 0,
-    transition: { duration: 0.45, ease: [0.16, 1, 0.3, 1], delay },
+    transition: { duration: 0.45, delay },
   }),
 };
 
@@ -62,14 +60,14 @@ function App() {
         <div className="max-w-6xl mx-auto px-5 md:px-8 h-16 flex items-center justify-between">
 
           {/* Logo */}
-          <a href="#" className="flex items-center gap-2.5 group" aria-label="Bridge AI home">
+          <a href="#" className="flex items-center gap-2.5 group" aria-label="Bridge Consulting home">
             <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-[var(--primary-fixed)] via-[var(--accent-fixed)] to-[var(--secondary-fixed-dim)] p-[1.5px] flex-shrink-0">
               <div className="w-full h-full rounded-[6px] bg-[var(--surface-lowest)] flex items-center justify-center">
                 <Box className="w-4 h-4 text-[var(--primary-fixed)]" />
               </div>
             </div>
             <span className="font-bold text-base tracking-tight font-[Manrope] text-[var(--on-surface)]">
-              Bridge AI
+              Bridge Consulting
             </span>
           </a>
 
@@ -92,7 +90,7 @@ function App() {
 
           {/* CTA */}
           <a
-            href="mailto:josephpolanco909@gmail.com?subject=Bridge%20AI%20Inquiry"
+            href="mailto:josephpolanco909@gmail.com?subject=Bridge%20Consulting%20Inquiry"
             className="btn-primary gap-2"
           >
             <MessageSquare className="w-4 h-4 flex-shrink-0" />
@@ -120,21 +118,20 @@ function App() {
             </div>
 
             {/* Heading */}
-            <h1 className="text-5xl md:text-7xl lg:text-[82px] font-black leading-[1.04] tracking-tight font-[Manrope] text-[var(--on-surface)]">
-              Bridge AI builds{' '}
-              <span className="text-gradient">usable AI systems</span>{' '}
-              for real teams.
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-black leading-[1.12] pb-1 tracking-tight font-[Manrope] text-[var(--on-surface)]">
+              Bridge Consulting helps your business{' '}
+              <span className="text-gradient inline-block pb-[0.08em]">grow with modern technology.</span>
             </h1>
 
             {/* Sub */}
             <p className="text-base md:text-xl text-[var(--on-surface-variant)] max-w-2xl leading-relaxed font-light">
-              From multi-agent workflows to internal automation and executive training — we help companies turn AI interest into production-grade systems that save time, reduce manual work, and actually get adopted.
+              From multi agent workflows to internal automation and executive training, we help companies turn AI interest into production grade systems that save time, reduce manual work, and actually get adopted.
             </p>
 
             {/* CTAs */}
             <div className="flex flex-col sm:flex-row gap-3 pt-2">
               <a
-                href="mailto:josephpolanco909@gmail.com?subject=Bridge%20AI%20Project"
+                href="mailto:josephpolanco909@gmail.com?subject=Bridge%20Consulting%20Project"
                 className="btn-primary gap-2 px-6 py-3 text-sm"
               >
                 Start a Project
@@ -177,7 +174,7 @@ function App() {
         </section>
 
         {/* ── Services ─────────────────────────────────────────────── */}
-        <section id="services" className="flex flex-col gap-10">
+        <section id="services" className="scroll-mt-24 md:scroll-mt-28 flex flex-col gap-10">
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
             <div>
               <p className="section-label mb-3">Core Services</p>
@@ -253,7 +250,7 @@ function App() {
         </section>
 
         {/* ── Process ──────────────────────────────────────────────── */}
-        <section id="how-we-work" className="grid lg:grid-cols-[1fr_1.3fr] gap-8 items-start">
+        <section id="how-we-work" className="scroll-mt-24 md:scroll-mt-28 grid lg:grid-cols-[1fr_1.3fr] gap-8 items-start">
 
           {/* Left — description panel */}
           <div className="glass-card rounded-[var(--radius-xl)] p-7 md:p-9 flex flex-col gap-4 ambient-glow lg:sticky lg:top-24">
@@ -296,14 +293,14 @@ function App() {
         </section>
 
         {/* ── Why Us + Case Studies ─────────────────────────────────── */}
-        <section id="why-us" className="grid lg:grid-cols-2 gap-5 items-start">
+        <section id="why-us" className="scroll-mt-24 md:scroll-mt-28 grid lg:grid-cols-2 gap-5 items-start">
 
           {/* Differentiators */}
           <div className="rounded-[var(--radius-xl)] bg-[var(--surface-low)] border border-[var(--outline-variant)]/60 p-7 md:p-9 flex flex-col gap-6 h-full">
             <div>
-              <p className="section-label mb-3">Why Bridge AI</p>
+              <p className="section-label mb-3">Why Bridge Consulting</p>
               <h2 className="text-2xl md:text-3xl font-bold font-[Manrope]">
-                Technical depth with operator-level pragmatism
+                Technical depth with operator level pragmatism
               </h2>
             </div>
             <div className="flex flex-col gap-3">
@@ -370,7 +367,7 @@ function App() {
                 Need AI systems, not slide decks?
               </h2>
               <p className="text-sm md:text-base text-[var(--on-surface-variant)] leading-relaxed">
-                Bridge AI works best with teams that already know AI matters and need a partner who can translate that urgency into shipped tooling, automation, and training programs that stick.
+                Bridge Consulting works best with teams that already know AI matters and need a partner who can translate that urgency into shipped tooling, automation, and training programs that stick.
               </p>
             </div>
 
@@ -388,10 +385,10 @@ function App() {
                 </div>
                 <div className="flex flex-col gap-2.5">
                   <a
-                    href="mailto:josephpolanco909@gmail.com?subject=Bridge%20AI%20Discovery%20Call"
+                    href="mailto:josephpolanco909@gmail.com?subject=Bridge%20Consulting%20Discovery%20Call"
                     className="btn-primary gap-2"
                   >
-                    Email Bridge AI
+                    Email Bridge Consulting
                     <ArrowRight className="w-4 h-4 flex-shrink-0" />
                   </a>
                   <a
@@ -423,7 +420,7 @@ function App() {
                     <Box className="w-4 h-4 text-[var(--primary-fixed)]" />
                   </div>
                 </div>
-                <span className="font-bold text-base font-[Manrope]">Bridge AI</span>
+                <span className="font-bold text-base font-[Manrope]">Bridge Consulting</span>
               </div>
               <p className="text-sm text-[var(--on-surface-variant)] leading-relaxed max-w-xs">
                 AI consulting, automation systems, and training for teams that want deployed outcomes instead of vague experimentation.
@@ -451,14 +448,15 @@ function App() {
             {/* Contact */}
             <div className="flex flex-col gap-3">
               <h4 className="section-label mb-1">Contact</h4>
-              <div className="mb-1">
+              <div className="mb-2 flex flex-col gap-2">
                 <p className="text-sm font-semibold text-[var(--on-surface)]">Joseph Polanco</p>
-                <p className="text-xs text-[var(--on-surface-variant)]">AI systems & automation specialist</p>
+                <hr className="divider" />
+                <p className="text-xs text-[var(--on-surface-variant)]">AI Systems & Automation Specialist</p>
               </div>
               {[
                 { label: 'josephpolanco909@gmail.com', href: 'mailto:josephpolanco909@gmail.com' },
-                { label: '(646) 675-0765', href: 'tel:6466750765' },
-                { label: 'linkedin.com/in/joseph-polanco', href: 'https://linkedin.com/in/joseph-polanco', external: true },
+                { label: '(646) 675 0765', href: 'tel:6466750765' },
+                { label: 'LinkedIn Profile', href: 'https://linkedin.com/in/joseph-polanco', external: true },
               ].map((link) => (
                 <a
                   key={link.label}
@@ -477,7 +475,7 @@ function App() {
 
           <div className="flex flex-col sm:flex-row items-center justify-between gap-3">
             <p className="text-xs text-[var(--on-surface-variant)]">
-              © {new Date().getFullYear()} Bridge AI. All rights reserved.
+              © {new Date().getFullYear()} Bridge Consulting. All rights reserved.
             </p>
             <p className="text-xs text-[var(--on-surface-variant)]">Engineered in New York</p>
           </div>

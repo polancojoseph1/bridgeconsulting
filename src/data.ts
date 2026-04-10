@@ -125,7 +125,7 @@ export const stats = [
   { value: '3x', label: 'Faster time to ship' },
   { value: '400%', label: 'Outbound volume lift' },
   { value: '70%+', label: 'Email open rates' },
-  { value: '100%', label: 'Production-grade focus' },
+  { value: '100%', label: 'Production grade focus' },
 ];
 
 export const services = [
@@ -133,7 +133,7 @@ export const services = [
     title: 'AI Consulting',
     kicker: 'Strategy & Advisory',
     icon: 'consulting' as const,
-    description: 'Translate AI potential into a concrete roadmap your team can execute. We identify the highest-leverage opportunities, assess your existing stack, and define what to build first.',
+    description: 'Translate AI potential into a concrete roadmap your team can execute. We identify the highest leverage opportunities, assess your existing stack, and define what to build first.',
     offerings: [
       'AI readiness and opportunity mapping',
       'Tooling selection and architecture review',
@@ -141,27 +141,27 @@ export const services = [
       'Quarterly roadmap planning sessions',
     ],
     ctaLabel: 'Start a consulting engagement',
-    ctaHref: 'mailto:josephpolanco909@gmail.com?subject=Bridge%20AI%20Consulting',
+    ctaHref: 'mailto:josephpolanco909@gmail.com?subject=Bridge%20Consulting%20Consulting',
   },
   {
     title: 'Automation Systems',
     kicker: 'Build & Deploy',
     icon: 'automation' as const,
-    description: 'Custom AI agents and internal tools built end-to-end. From multi-agent pipelines to workflow automation, we ship production systems that integrate with how your team already operates.',
+    description: 'Custom AI agents and internal tools built end to end. From multi agent pipelines to workflow automation, we ship production systems that integrate with how your team already operates.',
     offerings: [
-      'Multi-agent pipeline development',
+      'Multi agent pipeline development',
       'Internal tool and dashboard builds',
-      'LLM integration and fine-tuning',
+      'LLM integration and fine tuning',
       'Ongoing maintenance and iteration',
     ],
     ctaLabel: 'Scope an automation project',
-    ctaHref: 'mailto:josephpolanco909@gmail.com?subject=Bridge%20AI%20Automation',
+    ctaHref: 'mailto:josephpolanco909@gmail.com?subject=Bridge%20Consulting%20Automation',
   },
   {
     title: 'AI Education & Training',
     kicker: 'Upskill & Adopt',
     icon: 'education' as const,
-    description: 'Hands-on training for executives and operators who need to understand and use AI systems confidently. Not theoretical—practical sessions tied to your actual tools and workflows.',
+    description: 'Hands on training for executives and operators who need to understand and use AI systems confidently. Not theoretical, practical sessions tied to your actual tools and workflows.',
     offerings: [
       'Executive AI literacy workshops',
       'Operator training for deployed systems',
@@ -169,7 +169,7 @@ export const services = [
       'Custom curriculum for your stack',
     ],
     ctaLabel: 'Book a training session',
-    ctaHref: 'mailto:josephpolanco909@gmail.com?subject=Bridge%20AI%20Training',
+    ctaHref: 'mailto:josephpolanco909@gmail.com?subject=Bridge%20Consulting%20Training',
   },
 ];
 
@@ -182,7 +182,7 @@ export const processSteps = [
   {
     number: '02',
     title: 'Solution Design',
-    description: 'We define the architecture, tooling, and scope. You get a clear plan before any work begins — no surprises mid-engagement.',
+    description: 'We define the architecture, tooling, and scope. You get a clear plan before any work begins, no surprises during engagement.',
   },
   {
     number: '03',
@@ -199,14 +199,14 @@ export const processSteps = [
 export const differentiators = [
   {
     title: 'Engineering depth, not slide decks',
-    description: 'Every engagement produces running code, not a strategy document. Bridge AI builds alongside you until something ships.',
+    description: 'Every engagement produces running code, not a strategy document. Bridge Consulting builds alongside you until something ships.',
   },
   {
-    title: 'Operator-first thinking',
-    description: 'Systems are designed around how your team actually works — not how an ideal team would work. Adoption is built into the architecture.',
+    title: 'Operator first thinking',
+    description: 'Systems are designed around how your team actually works, not how an ideal team would work. Adoption is built into the architecture.',
   },
   {
-    title: 'No black-box dependencies',
+    title: 'No black box dependencies',
     description: 'We prioritize tooling you can maintain, extend, and understand. You own the output and the knowledge to run it.',
   },
 ];
@@ -214,20 +214,20 @@ export const differentiators = [
 export const caseStudies = [
   {
     type: 'AI Agents',
-    title: 'SDR Pipeline — Outbound at Scale',
-    summary: 'Replaced a 4-person manual research process with an autonomous agent that researches, qualifies, and drafts personalized outbound sequences.',
+    title: 'SDR Pipeline Outbound at Scale',
+    summary: 'Replaced a 4 person manual research process with an autonomous agent that researches, qualifies, and drafts personalized outbound sequences.',
     outcome: '400% increase in outbound volume · 70%+ open rates',
   },
   {
     type: 'Internal Automation',
     title: 'Operations Workflow Automation',
-    summary: 'Built a multi-step internal automation layer that eliminated repetitive data entry across three internal tools for a 12-person ops team.',
+    summary: 'Built a multi step internal automation layer that eliminated repetitive data entry across three internal tools for a 12 person ops team.',
     outcome: '11 hours per week saved · Zero manual handoffs',
   },
   {
     type: 'AI Education',
     title: 'Executive AI Literacy Program',
-    summary: 'Designed and delivered a four-session training program for a leadership team preparing to evaluate AI vendors and internal build decisions.',
+    summary: 'Designed and delivered a four session training program for a leadership team preparing to evaluate AI vendors and internal build decisions.',
     outcome: 'Confident buy/build decisions · Clear internal AI policy',
   },
 ];
