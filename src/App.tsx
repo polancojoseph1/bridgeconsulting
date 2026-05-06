@@ -12,9 +12,9 @@ import {
 } from 'lucide-react';
 import { motion } from 'framer-motion';
 import {
-  caseStudies,
   differentiators,
   processSteps,
+  projects,
   services,
   stats,
 } from './data';
@@ -76,6 +76,7 @@ function App() {
             {[
               { href: '#services', label: 'Services' },
               { href: '#how-we-work', label: 'Process' },
+              { href: '#projects', label: 'Projects' },
               { href: '#why-us', label: 'Why Us' },
             ].map((link) => (
               <a
@@ -292,67 +293,72 @@ function App() {
           </div>
         </section>
 
-        {/* ── Why Us + Case Studies ─────────────────────────────────── */}
-        <section id="why-us" className="scroll-mt-24 md:scroll-mt-28 grid lg:grid-cols-2 gap-5 items-start">
-
-          {/* Differentiators */}
-          <div className="rounded-[var(--radius-xl)] bg-[var(--surface-low)] border border-[var(--outline-variant)]/60 p-7 md:p-9 flex flex-col gap-6 h-full">
+        {/* ── Projects ──────────────────────────────────────────────── */}
+        <section id="projects" className="scroll-mt-24 md:scroll-mt-28 flex flex-col gap-10">
+          <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
             <div>
-              <p className="section-label mb-3">Why Bridge Consulting</p>
-              <h2 className="text-2xl md:text-3xl font-bold font-[Manrope]">
-                Technical depth with operator level pragmatism
+              <p className="section-label mb-3">Projects</p>
+              <h2 className="text-3xl md:text-4xl font-bold font-[Manrope]">
+                Project examples and descriptions
               </h2>
             </div>
-            <div className="flex flex-col gap-3">
-              {differentiators.map((item) => (
-                <div
-                  key={item.title}
-                  className="rounded-[var(--radius-lg)] bg-[var(--surface-lowest)] border border-[var(--outline-variant)]/50 p-5"
-                >
-                  <h3 className="text-sm font-bold font-[Manrope] text-[var(--primary-fixed)] mb-1.5">
-                    {item.title}
-                  </h3>
-                  <p className="text-sm text-[var(--on-surface-variant)] leading-relaxed">
-                    {item.description}
-                  </p>
-                </div>
-              ))}
-            </div>
+            <p className="text-sm text-[var(--on-surface-variant)] max-w-sm leading-relaxed">
+              A focused library of software, AI, automation, and operations tools that show the kinds of systems modern teams need built.
+            </p>
           </div>
 
-          {/* Case Studies */}
-          <div className="rounded-[var(--radius-xl)] bg-[var(--surface-low)] border border-[var(--outline-variant)]/60 p-7 md:p-9 flex flex-col gap-6 h-full">
-            <div className="flex items-start justify-between gap-4">
-              <div>
-                <p className="section-label mb-3">Case Studies</p>
-                <h2 className="text-2xl md:text-3xl font-bold font-[Manrope]">
-                  Results from real engagements
-                </h2>
-              </div>
-              <div className="icon-box flex-shrink-0 mt-1">
-                <Calendar className="w-5 h-5 text-[var(--accent-fixed)]" />
-              </div>
-            </div>
-            <div className="flex flex-col gap-3">
-              {caseStudies.map((study) => (
-                <div
-                  key={study.title}
-                  className="relative overflow-hidden rounded-[var(--radius-lg)] bg-[var(--surface-lowest)] border border-[var(--outline-variant)]/50 p-5"
-                >
-                  <div className="absolute inset-y-0 left-0 w-[3px] bg-gradient-to-b from-[var(--primary-fixed)] to-[var(--secondary-fixed-dim)] rounded-l-full" />
-                  <div className="pl-4">
-                    <p className="section-label mb-1.5">{study.type}</p>
-                    <h3 className="text-sm font-bold font-[Manrope] mb-2">{study.title}</h3>
-                    <p className="text-sm text-[var(--on-surface-variant)] leading-relaxed mb-2.5">
-                      {study.summary}
-                    </p>
-                    <p className="text-xs font-semibold text-[var(--primary-fixed)]">
-                      {study.outcome}
-                    </p>
+          <hr className="divider" />
+
+          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4">
+            {projects.map((project, idx) => (
+              <motion.article
+                key={project.title}
+                initial="hidden"
+                whileInView="show"
+                custom={idx * 0.04}
+                variants={fadeUp}
+                viewport={{ once: true, amount: 0.15 }}
+                className="relative min-h-[190px] rounded-[var(--radius-xl)] bg-[var(--surface-low)] border border-[var(--outline-variant)]/60 p-6 flex flex-col gap-4 card-hover card-top-stripe"
+              >
+                <div className="flex items-center justify-between gap-4">
+                  <h3 className="text-lg font-bold font-[Manrope] text-[var(--on-surface)]">
+                    {project.title}
+                  </h3>
+                  <div className="icon-box w-10 h-10">
+                    <Calendar className="w-4 h-4 text-[var(--accent-fixed)]" />
                   </div>
                 </div>
-              ))}
-            </div>
+                <p className="text-sm text-[var(--on-surface-variant)] leading-relaxed">
+                  {project.description}
+                </p>
+              </motion.article>
+            ))}
+          </div>
+        </section>
+
+        {/* ── Why Us ───────────────────────────────────────────────── */}
+        <section id="why-us" className="scroll-mt-24 md:scroll-mt-28 flex flex-col gap-8">
+          <div className="max-w-2xl">
+            <p className="section-label mb-3">Why Bridge Consulting</p>
+            <h2 className="text-3xl md:text-4xl font-bold font-[Manrope]">
+              Technical depth with operator level pragmatism
+            </h2>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+            {differentiators.map((item) => (
+              <article
+                key={item.title}
+                className="rounded-[var(--radius-xl)] bg-[var(--surface-low)] border border-[var(--outline-variant)]/60 p-6 card-hover"
+              >
+                <h3 className="text-base font-bold font-[Manrope] text-[var(--primary-fixed)] mb-2">
+                  {item.title}
+                </h3>
+                <p className="text-sm text-[var(--on-surface-variant)] leading-relaxed">
+                  {item.description}
+                </p>
+              </article>
+            ))}
           </div>
         </section>
 

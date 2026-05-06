@@ -211,23 +211,58 @@ export const differentiators = [
   },
 ];
 
-export const caseStudies = [
+export interface Project {
+  title: string;
+  description: string;
+}
+
+export const projects: Project[] = [
   {
-    type: 'AI Agents',
-    title: 'SDR Pipeline Outbound at Scale',
-    summary: 'Replaced a 4 person manual research process with an autonomous agent that researches, qualifies, and drafts personalized outbound sequences.',
-    outcome: '400% increase in outbound volume · 70%+ open rates',
+    title: 'Ecomemail',
+    description: 'Automated email content for ecommerce stores, using personalization to engage shoppers and increase repeat purchases.',
   },
   {
-    type: 'Internal Automation',
-    title: 'Operations Workflow Automation',
-    summary: 'Built a multi step internal automation layer that eliminated repetitive data entry across three internal tools for a 12 person ops team.',
-    outcome: '11 hours per week saved · Zero manual handoffs',
+    title: 'AI-Powered eBook Platform',
+    description: 'A digital publishing platform that helps users create, format, read, and share ebooks with AI assisted workflows.',
   },
   {
-    type: 'AI Education',
-    title: 'Executive AI Literacy Program',
-    summary: 'Designed and delivered a four session training program for a leadership team preparing to evaluate AI vendors and internal build decisions.',
-    outcome: 'Confident buy/build decisions · Clear internal AI policy',
+    title: 'Blakbox',
+    description: 'A media platform where AI creators can showcase images, video, and music with searchable feeds and cross device access.',
+  },
+  {
+    title: 'Reporting Agent',
+    description: 'An AI reporting tool that collects sales data and turns it into clear daily reports for faster business decisions.',
+  },
+  {
+    title: 'Product Comparison Extension',
+    description: 'A browser extension that compares product features, prices, images, and reviews so users can make stronger purchase decisions.',
+  },
+  {
+    title: 'Cloud Blueprint',
+    description: 'An AI cloud planning platform that turns project requirements into AWS, Azure, or GCP deployment plans in minutes.',
+  },
+  {
+    title: 'EduConnect Platform',
+    description: 'An education platform connecting students, parents, teachers, and administrators for assessments, progress tracking, and class management.',
+  },
+  {
+    title: 'Vanilla Voice',
+    description: 'An AI outbound calling assistant that automates customer outreach, qualifies leads in real time, and personalizes conversations.',
+  },
+  {
+    title: 'LinguaDesk',
+    description: 'A multilingual AI support chatbot that handles website customer questions through text or voice in the user language.',
+  },
+  {
+    title: 'ShiftDesk',
+    description: 'A workforce operations dashboard for time tracking, tasks, project management, payroll reports, and hourly team visibility.',
+  },
+  {
+    title: 'LegalEase AI',
+    description: 'An AI legal and tax guidance platform that gives individuals and businesses quick plain language answers around the clock.',
+  },
+  {
+    title: 'Sales Insight Agent',
+    description: 'An AI sales analytics agent that unifies marketplace, ERP, and web data to reveal trends, anomalies, and growth opportunities.',
   },
 ];
